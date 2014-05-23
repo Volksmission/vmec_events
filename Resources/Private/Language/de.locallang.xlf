@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-05-23T10:30:26Z" product-name="vmec_events">
+		<header/>
+		<body>
+			<trans-unit id="tx_vmecevents_domain_model_event">
+				<source>Event</source>
+				<target>Veranstaltung</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.start">
+				<source>Start</source>
+				<target>Beginn</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.end">
+				<source>End</source>
+				<target>Ende</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.all_day">
+				<source>All Day</source>
+				<target>ganztägig</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.teaser">
+				<source>Teaser</source>
+				<target>Kurzbeschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.description">
+				<source>Description</source>
+				<target>Ausführliche Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.image">
+				<source>Image</source>
+				<target>Bild</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.location">
+				<source>Location</source>
+				<target>Veranstaltungsort</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.location_address">
+				<source>Location Address</source>
+				<target>Adresse</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.registration_email">
+				<source>Registration Email</source>
+				<target>E-Mailadresse für Anmeldungen</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_event.participants">
+				<source>Participants</source>
+				<target>Teilnehmer</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_participant">
+				<source>Participant</source>
+				<target>Teilnehmer</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_participant.name">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_participant.email">
+				<source>Email</source>
+				<target>E-Mailadresse</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_participant.phone">
+				<source>Phone</source>
+				<target>Telefon</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_participant.address">
+				<source>Address</source>
+				<target>Adresse</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_participant.birth_date">
+				<source>Birth Date</source>
+				<target>Geburtsdatum</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_participant.number_of_persions">
+				<source>Number Of Persions</source>
+				<target>Anzahl Personen</target>
+			</trans-unit>
+			<trans-unit id="tx_vmecevents_domain_model_participant.message">
+				<source>Message</source>
+				<target>Nachricht (optional)</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
