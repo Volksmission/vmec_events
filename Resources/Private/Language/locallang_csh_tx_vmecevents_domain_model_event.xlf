@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-23T10:30:26Z" product-name="vmec_events">
+		<header/>
+		<body>
+			<trans-unit id="start.description">
+				<source>start</source>
+			</trans-unit>
+			<trans-unit id="end.description">
+				<source>end</source>
+			</trans-unit>
+			<trans-unit id="all_day.description">
+				<source>allDay</source>
+			</trans-unit>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="teaser.description">
+				<source>teaser</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="location.description">
+				<source>location</source>
+			</trans-unit>
+			<trans-unit id="location_address.description">
+				<source>locationAddress</source>
+			</trans-unit>
+			<trans-unit id="registration_email.description">
+				<source>registrationEmail</source>
+			</trans-unit>
+			<trans-unit id="participants.description">
+				<source>participants</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

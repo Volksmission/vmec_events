@@ -1,0 +1,15 @@
+
+plugin.tx_vmecevents {
+	view {
+		# cat=plugin.tx_vmecevents/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:vmec_events/Resources/Private/Templates/
+		# cat=plugin.tx_vmecevents/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:vmec_events/Resources/Private/Partials/
+		# cat=plugin.tx_vmecevents/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:vmec_events/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_vmecevents//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

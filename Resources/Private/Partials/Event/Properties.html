@@ -1,0 +1,83 @@
+
+<table class="tx-vmec-events" >
+	<tr>
+		<td>
+			<f:translate key="tx_vmecevents_domain_model_event.start" />
+		</td>
+		<td>
+		{event.start -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmecevents_domain_model_event.end" />
+		</td>
+		<td>
+		{event.end -> f:format.date()}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmecevents_domain_model_event.all_day" />
+		</td>
+		<td>
+		{event.allDay}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmecevents_domain_model_event.title" />
+		</td>
+		<td>
+		{event.title}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmecevents_domain_model_event.teaser" />
+		</td>
+		<td>
+		{event.teaser}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmecevents_domain_model_event.description" />
+		</td>
+		<td>
+		{event.description}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmecevents_domain_model_event.image" />
+		</td>
+		<td>
+				<f:image src="{event.image.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmecevents_domain_model_event.location" />
+		</td>
+		<td>
+		{event.location}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmecevents_domain_model_event.location_address" />
+		</td>
+		<td>
+		{event.locationAddress}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_vmecevents_domain_model_event.registration_email" />
+		</td>
+		<td>
+		{event.registrationEmail}
+		</td>
+	</tr>
+</table>
