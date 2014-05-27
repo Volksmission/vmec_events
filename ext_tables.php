@@ -75,3 +75,17 @@ $GLOBALS['TCA']['tx_vmecevents_domain_model_participant'] = array(
     $_EXTKEY,
     'tx_vmecevents_domain_model_event'
 );
+
+
+// Folder icon
+unset($ICON_TYPES['vmec_events']);
+\TYPO3\CMS\Backend\Sprite\SpriteManager::addTcaTypeIcon('pages', 'contains-news', '../typo3conf/ext/news/Resources/Public/Icons/folder.gif');
+
+
+
+$extensionName = t3lib_div::underscoredToUpperCamelCase($_EXTKEY);
+$pluginSignature = 'vmecevents_events';
+
+$TCA['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
+t3lib_extMgm::addPiFlexFormValue($pluginSignature, 'FILE:EXT:vmec_events/Configuration/FlexForms/flexform_events.xml');
+
