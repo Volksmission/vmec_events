@@ -59,4 +59,19 @@ class EventController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 		$this->view->assign('event', $event);
 	}
 
+	/**
+	 * action upcoming
+	 *
+	 * @return void
+	 */
+	public function upcomingAction() {
+		$limit = NULL;
+		if ($this->settings['limit']) $limit = $this->settings['limit'];
+		$events = $this->eventRepository->findUpcoming($limit);
+		$this->view->assign('events', $events);
+	}
+	
+	
+	
+	
 }

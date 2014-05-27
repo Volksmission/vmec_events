@@ -7,7 +7,7 @@ if (!defined('TYPO3_MODE')) {
 	'VMeC.' . $_EXTKEY,
 	'Events',
 	array(
-		'Event' => 'list, show',
+		'Event' => 'list, show, upcoming',
 		'Participant' => 'list, show, create, new, edit, update, delete',
 		
 	),
