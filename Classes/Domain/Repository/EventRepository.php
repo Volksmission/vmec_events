@@ -30,6 +30,26 @@ namespace VMeC\VmecEvents\Domain\Repository;
  * The repository for Events
  */
 class EventRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
+	
+	
+	/**
+	 * Find a specified number of upcoming events
+	 * 
+	 * @param int $limit
+	 * @return \VMeC\VmecEvents\Domain\Model\Event
+	 */
+	public function findUpcoming (int $limit = NULL) {
+		//die ('findUpcoming: '.$limit);	
+		$this->setDefaultOrderings(array('start' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING));
+		$q = $this->createQuery();
+		if ($limit) $q->setLimit((int)$limit);
+		$constraints = array(
+				$q->greaterThanOrEqual('start', strftime('%Y-%m-%d %H:%M:%S')),
+		);
+		$events = $q->matching($q->logicalAnd($constraints))->execute();
+		return $events;
+		
+	}
 
 	
 }

@@ -9,7 +9,7 @@ $GLOBALS['TCA']['tx_vmecevents_domain_model_event'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, start, end, all_day, title, teaser, description, image, location, location_address, registration_email, participants',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, start, end, all_day, title, teaser, description;;;richtext:rte_transform[mode=ts_links], image, location, location_address, registration_email, participants, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, start, end, all_day, title, teaser, description;;;richtext:rte_transform[mode=ts_links], image, --div--;Veranstaltungsort, location, location_address, --div--;Anmeldungen, registration_email, participants, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -190,10 +190,11 @@ $GLOBALS['TCA']['tx_vmecevents_domain_model_event'] = array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:vmec_events/Resources/Private/Language/locallang_db.xlf:tx_vmecevents_domain_model_event.location_address',
 			'config' => array(
-				'type' => 'input',
-				'size' => 30,
+				'type' => 'text',
+				'cols' => 40,
+				'rows' => 15,
 				'eval' => 'trim'
-			),
+			)
 		),
 		'registration_email' => array(
 			'exclude' => 1,
