@@ -79,7 +79,8 @@ $GLOBALS['TCA']['tx_vmecevents_domain_model_participant'] = array(
 
 // Folder icon
 unset($ICON_TYPES['vmec_events']);
-\TYPO3\CMS\Backend\Sprite\SpriteManager::addTcaTypeIcon('pages', 'contains-news', '../typo3conf/ext/news/Resources/Public/Icons/folder.gif');
+$TCA['pages']['columns']['module']['config']['items'][] = array('Veranstaltungen', 'vmecevents', 'EXT:vmec_events/ext_icon.gif');
+\TYPO3\CMS\Backend\Sprite\SpriteManager::addTcaTypeIcon('pages', 'contains-vmecevents', '../typo3conf/ext/vmec_events/ext_icon.gif');
 
 
 
