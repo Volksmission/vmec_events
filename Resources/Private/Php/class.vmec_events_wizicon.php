@@ -40,7 +40,7 @@ class vmecevents_events_wizicon {
 	 */
 	public function proc($wizardItems) {
 		$wizardItems['plugins_tx_' . self::KEY] = array(
-			'icon'			=> \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('vmec_events') . 'ext_icon.gif',
+			'icon'			=> \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('vmec_events') . '/Resources/Public/Icons/ce_wiz.gif',
 			'title'			=> 'Veranstaltungskalender',
 			'description'	=> 'Zeigt Informationen zu Veranstaltungen an',
 			'params'		=> '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=' . self::KEY . '_events'
